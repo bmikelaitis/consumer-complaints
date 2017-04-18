@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<!--
+	Transition by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Predicting Customer Complaints</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div class="container" id="wrapper">
+			<header id="header">
+				<h1>|</h1>
+				<nav>
+					<a href="#home" class="jumplink primary">Home</a>
+					<a href="#work" class="jumplink pad-after primary">Our Work</a>
+					<a href="#about" class="jumplink pad-before primary">Web Interface</a>
+					<a href="#contact" class="jumplink primary">Cool Things</a>
+				</nav>
+			</header>
+			<div class="row">
+				<div class="12u">
+
+					<div id="main">
+						<div class="previous"></div>
+						<div class="next"></div>
+						<div class="viewer">
+							<div class="reel">
+
+								<!-- **************************************************************************** -->
+								<!-- * Home                                                                     * -->
+								<!-- **************************************************************************** -->
+
+									<div class="slide" id="home">
+										<article class="page home">
+											<div class="banner"><img src="images/eller.png" width="518" height="225" alt=""/></div>
+											<div class="inner">
+
+												<!-- Inner content -->
+
+													<div class="intro">
+														<header class="major">
+															<h2>Team 8</h2>
+														</header>
+														<p>We launched this project with the goal of predicting customer complaints <br />
+														within the financial industry in order to help customers resolve  <br />
+														their issues before they escalate.</p>
+														<a href="#work" class="button jumplink">Lets Jump In</a>
+													</div>
+
+											</div>
+										</article>
+									</div>
+
+								<!-- **************************************************************************** -->
+								<!-- * Work                                                                     * -->
+								<!-- **************************************************************************** -->
+
+									<div class="slide" id="work">
+										<article class="page work">
+											<div class="inner">
+
+												<!-- Inner content -->
+
+													<header class="major">
+														<h2>The various steps we took to get here</h2>
+													</header>
+													<p>Below are several screenshots that show the various steps and information we took in developing this algorithm and application</p>
+
+													<!--
+
+														This gallery is powered by Poptrox, which supports images, YouTube videos, Vimeo videos,
+														Soundcloud tracks, IFRAMEs, and AJAX content. Learn more here:
+
+														https://github.com/n33/jquery.poptrox
+
+													-->
+
+													<div class="gallery">
+														<div class="row no-collapse">
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Data1.png" class="image full"><img src="images/gallery/thumbnails/Data1.jpg" alt="" title="Data file after preprocessing and adding features." /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Type.png" class="image full"><img src="images/gallery/thumbnails/Type.jpg" alt="" title="The data types and features used to create our algorithm." /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Partition.png" class="image full"><img src="images/gallery/thumbnails/Partition.jpg" alt="" title="Our Partition was 75% Training, 25% Testing." /></a></div>
+														</div>
+		
+														<div class="row no-collapse">
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/models.png" class="image full"><img src="images/gallery/thumbnails/which.jpg" alt="" title="Autoclassifer ran to see which models gave accurate predictions." /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/C5-Node.png" class="image full"><img src="images/gallery/thumbnails/C5-Node.jpg" alt="" title="Ran a C5.0 algorithm as boosting proveded most accurate results." /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Model.png" class="image full"><img src="images/gallery/thumbnails/Model.jpg" alt="" title="Final set of nodes in SPSS." /></a></div>
+														</div>
+
+													</div>
+
+											</div>
+										</article>
+									</div>
+
+								<!-- **************************************************************************** -->
+								<!-- * About                                                                    * -->
+								<!-- **************************************************************************** -->
+
+									<div class="slide" id="about">
+										<article class="page about">
+											<div class="inner">
+
+												<!-- Inner content -->
+
+													<header class="major">
+														<h2>Predict Consumer Complaints</h2>
+													</header>
+													<div class="row">
+														<div class="9u 12u(mobile)">
+															<div class="content" >
+															<fieldset>
+																<form action = "predict.php" method = "post">
+																<h2>Ticker Symbol:</h2>
+																<select name="ticker" style="width: 300px" type="text">
+
+																<option value="AXP">Amex</option>
+																<option value="BAC">Bank of America</option>
+																<option value="BBT">BB&T Financial</option>
+																<option value="BCS">Barclays PLC</option>
+																<option value="C">Citibank</option>
+																<option value="CFG">Citizens Financial Group, Inc.</option>
+																<option value="CMA">Comerica</option>
+																<option value="COF">Capital One</option>
+																<option value="DFS">Discover</option>
+																<option value="ECPG">Encore Capital Group</option>
+																<option value="EFX">Equifax</option>
+																<option value="ENVA">Enova International, Inc.</option>
+																<option value="EVER">EverBank</option>
+																<option value="F">Ford Motor Credit Company</option>
+																<option value="FBC">Flagstar Bank</option>
+																<option value="FDC">First Data Corporation</option>
+																<option value="FIS">Fidelity National Information Services, Inc. (FNIS)</option>
+																<option value="FITB">Fifth Third Financial Corporation</option>
+																<option value="GM">GM Financial</option>
+																<option value="HSBC">HSBC North America Holdings Inc.</option>
+																<option value="JPM">JPMorgan Chase & Co.</option>
+																<option value="KEY">KeyCorp</option>
+																<option value="MTB">M&T Bank Corporation</option>
+																<option value="NNI">Nelnet</option>
+																<option value="NSM">Nationstar Mortgage</option>
+																<option value="OCN">Ocwen</option>
+																<option value="PMT">PennyMac Loan Services, LLC</option>
+																<option value="PNC">PNC Bank N.A.</option>
+																<option value="PYPL">PayPal Holdings, Inc.</option>
+																<option value="RF">Regions Financial Corporation</option>
+																<option value="SAN">Santander Bank US</option>
+																<option value="SC">Santander Consumer USA Holdings Inc</option>
+																<option value="STI">SunTrust Banks, Inc.</option>
+																<option value="SYF">Synchrony Financial</option>
+																<option value="THC">Tenet HealthCare Corporation</option>
+																<option value="TM">Toyota Motor Credit Corporation</option>
+																<option value="TRU">TransUnion Intermediate Holdings, Inc.</option>
+																<option value="USB">U.S. Bancorp</option>
+																<option value="WFC">Wells Fargo & Company</option>
+																<option value="WU">The Western Union Company</option>
+																</select>
+																<h2>Volume Traded:</h2>
+																<select name="volume" style="width: 300px" type="text">
+																<option value="Increased">Increased</option>
+																<option value="Decreased">Decreased</option>
+
+<option value="Same">Same</option>
+
+</select>
+
+<h2>Season:</h2>
+																<select name="season" style="width: 300px" type="text">
+																<option value="Autumn">Autumn</option>
+																<option value="Spring">Spring</option>
+
+<option value="Summer">Summer</option>
+
+<option value="Winter">Winter</option>
+
+</select>
+
+<h2>Day of the Week:</h2>
+																<select name="day" style="width: 300px" type="text">
+																<option value="Monday">Monday</option>
+																<option value="Tuesday">Tuesday</option>
+
+<option value="Wednesday">Wednesday</option>
+
+<option value="Thursday">Thursday</option>
+
+<option value="Friday">Friday</option>
+
+</select>
+																<br />
+																<input type="submit" value = "Get Results" style = "padding-bottom = 20px">
+																</form>
+															</fieldset>
+															</div>
+														</div>
+														<div class="3u 12u(mobile)">
+															<div class="sidebar">
+
+																<!-- Sidebar -->
+
+																	<h3>Instructions:</h3>
+																<p>1. Select Ticker Symbol <br /> 
+																	2. Select whether the volume of traded stock for that company has increased or decreased from the previous day
+<br/>
+3. Select the Season <br />
+4. Select the Day of the Week
+</p>
+
+																	<h3>Dataset Links</h3>
+																	<ul class="style1">
+																		<li><a href="https://catalog.data.gov/dataset/consumer-complaint-database">Our Complaint Dataset</a></li>
+																		<li><a href="https://finance.yahoo.com/">Financial Dataset</a></li>
+																		<li><a href="#">Extra Dataset here</a></li>
+																	</ul>
+															
+
+															</div>
+														</div>
+													</div>
+
+											</div>
+										</article>
+									</div>
+
+								<!-- **************************************************************************** -->
+								<!-- * Contact                                                                  * -->
+								<!-- **************************************************************************** -->
+
+									<div class="slide" id="contact">
+										<article class="page contact">
+											<div class="inner">
+
+												<!-- Inner content -->
+
+													<header class="major">
+														<h2>Contact</h2>
+													</header>
+													<div class="row">
+														<div class="9u 12u(mobile)">
+															<div class="content">
+
+																<!-- Content -->
+
+																	<form method="post" action="#">
+																		<div class="row">
+
+																			<div class="6u 12u(mobile)">
+																				<input class="text" type="text" name="name" id="name" placeholder="Name" />
+																			</div>
+																			<div class="6u 12u(mobile)">
+																				<input class="text" type="email" name="email" id="email" placeholder="Email" />
+																			</div>
+																		</div>
+																		<div class="row">
+																			<div class="12u">
+																				<textarea name="message" id="message" placeholder="Message"></textarea>
+																			</div>
+																		</div>
+																		<div class="row">
+																			<div class="12u">
+																				<input class="button" type="submit" value="Send Message" />
+																			</div>
+																		</div>
+																	</form>
+
+															</div>
+														</div>
+														<div class="3u 12u(mobile)">
+															<div class="sidebar">
+
+																<!-- Sidebar -->
+
+																	<ul class="contact">
+																		<li class="fa-home">
+																			Untitled Studio
+																			1234 Somewhere Road #543
+																			Nashville, TN 00000
+																		</li>
+																		<li class="fa-envelope">
+																			<a href="#">info@untitled.tld</a>
+																		</li>
+																		<li class="fa-twitter">
+																			<a href="#">@untitled-tld</a>
+																		</li>
+																	</ul>
+
+															</div>
+														</div>
+													</div>
+
+											</div>
+										</article>
+									</div>
+
+								<!-- **************************************************************************** -->
+								<!-- **************************************************************************** -->
+								<!-- **************************************************************************** -->
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://msmis.eller.arizona.edu/program-details/courses/mis-510-web-computing-and-mining" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+				</ul>
+				<p>&copy; Team 8 - Spring 2017 MIS 510. All rights reserved.</p>
+			</footer>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.slidertron.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.nicescroll-modified.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
