@@ -5,6 +5,14 @@ day = sys.argv[2]
 season = sys.argv[3]
 volume = sys.argv[4]
 
+complaint = "Unknown"
+complaintFreq = 0.01
+Low = 0.01
+Low_Medium = 0.01
+Medium = 0.01
+Medium_High = 0.01
+High = 0.01
+
 #Node 1
 if ticker in ['AXP','ECPG','HSBC','JPM','PNC','STI','SYF','USB']:
 	complaint = "Medium-High"
@@ -58,7 +66,7 @@ if ticker in ['CFG']:
 #Node 7
 if ticker in ['CMA','ENVA','EVER','F','FDC','GM','NNI','THC','TM']:
 	complaint = "Low"
-	complaintFreq = 22.128
+	complaintFreq = 62.337
 	Low = 62.337
 	Low_Medium = 33.384 
 	Medium = 3.635
@@ -89,14 +97,8 @@ if ticker in ['DFS']:
 			Medium_High = 35.000
 			High = 0.000
 		#Node 12
-		if volume in ['Increased']:
-			complaint = "Medium"
-			complaintFreq = 0.00
-			Low = 0.000
-			Low_Medium = 0.000
-			Medium = 0.000
-			Medium_High = 0.000
-			High = 0.000
+		if volume in ['Same']:
+			complaint = "Up in the Air!"
 
 	#Node 13
 	if season in ['Spring']:
@@ -207,13 +209,8 @@ if ticker in ['FIS']:
 
 		#Node 28
 		if volume in ['Same']:
-			complaint = "Low"
-			complaintFreq = 0.00
-			Low = 0.000
-			Low_Medium = 0.000
-			Medium = 0.000
-			Medium_High = 0.000
-			High = 0.000
+			complaint = "Up in the Air!"
+
 	
 	#Node 29
 	if season in ['Spring']:

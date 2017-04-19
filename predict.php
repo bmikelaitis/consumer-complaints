@@ -72,7 +72,7 @@ table {
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid #3b414d;
     text-align: left;
     padding: 8px;
 }
@@ -139,23 +139,23 @@ The percentage of past complaints filed against <?php echo $output[6]; ?>  on a 
 																	  </tr>
 																	  <tr>
 																	    <td>Low</td>
-																	    <td>0 - 2</td>
+																	    <td>0</td>
 																	  </tr>
 																	  <tr>
 																	    <td>Low-Medium</td>
-																	    <td>0 - 2</td>
+																	    <td>1 - 2</td>
 																	  </tr>
 																	  <tr>
 																	    <td>Medium</td>
-																	    <td>0 - 2</td>
+																	    <td>3 - 4</td>
 																	  </tr>
 																	  <tr>
 																	    <td>Medium-High</td>
-																	    <td>0 - 2</td>
+																	    <td>5 - 11</td>
 																	  </tr>
 																	  <tr>
 																	    <td>High</td>
-																	    <td>0 - 2</td>
+																	    <td>12+</td>
 																	  </tr>
 																	</table>
 																	
@@ -186,17 +186,18 @@ The percentage of past complaints filed against <?php echo $output[6]; ?>  on a 
 													</header>
 													<div class="gallery">
 														<div class="row no-collapse">
-															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Tree1.png" class="image full"><img src="images/gallery/thumbnails/Tree1.jpg" alt="" title="Top Half of the Decision Tree." /></a></div>
-															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Tree2.png" class="image full"><img src="images/gallery/thumbnails/Tree2.jpg" alt="" title="The second top Half of the Decision Tree." /></a></div>
-															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Tree3.png" class="image full"><img src="images/gallery/thumbnails/Tree3.jpg" alt="" title="The third part of our Decision Tree" /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Predictors-Zoom.png" class="image full"><img src="images/gallery/thumbnails/Predictors-Zoom.jpg" alt="" title="Predictor Importance" /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Baseline.png" class="image full"><img src="images/gallery/thumbnails/Baseline.jpg" alt="" title="Baseline Prediction" /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Day-Graph.png" class="image full"><img src="images/gallery/thumbnails/Day-Graph.jpg" alt="" title="Distribution of Day of the Week for Predictions" /></a></div>
 														</div>
 		
 														<div class="row no-collapse">
-															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Tree4.png" class="image full"><img src="images/gallery/thumbnails/Tree4.jpg" alt="" title="Bottom part of our Decision Tree." /></a></div>
-															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Data-Quality.png" class="image full"><img src="images/gallery/thumbnails/Data-Quality.jpg" alt="" title="Data valadation with zero missing values." /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Season-Graph.png" class="image full"><img src="images/gallery/thumbnails/Season-Graph.jpg" alt="" title="Distribution of Season for Predictions" /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Volume-Overview.png" class="image full"><img src="images/gallery/thumbnails/Volume-Overview.jpg" alt="" title="Distribution of Volume for Predictions" /></a></div>
 												
 														</div>
-
+														<br>
+													<h1>&#8595; &#8595; &#8595;Scroll Down&#8595; &#8595; &#8595;</h1>
 													</div>
 													<hr>
 													<div>
