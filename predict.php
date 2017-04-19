@@ -28,7 +28,7 @@ window.onload = function () {
 	var chart = new CanvasJS.Chart("chartContainer",
 	{
 		title:{
-			text: "Percent likelihood of each category?",
+			text: "Prediction Likelihood",
 			fontFamily: "arial black"
 		},
                 animationEnabled: true,
@@ -88,7 +88,7 @@ tr:nth-child(even) {
 				
 				<nav>
 					<a href="#results" class="jumplink primary">Results</a>
-					<a href="#graph" class="jumplink pad-after primary">Graphs</a>
+					<a href="#Statistics" class="jumplink pad-after primary">Statistics</a>
                     <a href="index.html">Go Back</a>
 				</nav>
 			</header>
@@ -117,9 +117,11 @@ tr:nth-child(even) {
 														<div class="row">
 															<div class="12u 12u(mobile)">
 																<div class="content" >
-																	<h3> 
-The percentage of past complaints filed against <?php echo $output[6]; ?>  on a <?php echo $output[1]; ?> during <?php echo $output[2]; ?> with an <?php echo $output[3]; ?> change in volume trading was <?php echo $output[5]; ?>% </h3>
-<h2>Prediction: <?php echo $output[4]; ?></h2>
+																	<h1> 
+The percentage of past complaints filed against <?php echo $output[6]; ?>  on a <?php echo $output[1]; ?> during <?php echo $output[2]; ?> with an <?php echo $output[3]; ?> change in volume trading was <?php echo $output[5]; ?>% </h1>
+<br>
+<h2>Prediction Value: <?php echo $output[4]; ?></h2>
+<hr>
 																</div>
 															</div>
 														</div>
@@ -133,7 +135,7 @@ The percentage of past complaints filed against <?php echo $output[6]; ?>  on a 
 																	<table style = "margin-top: 50px">
 																	  <tr>
 																	    <th>Category</th>
-																	    <th>Range</th>
+																	    <th>Complaints</th>
 																	  </tr>
 																	  <tr>
 																	    <td>Low</td>
@@ -162,6 +164,9 @@ The percentage of past complaints filed against <?php echo $output[6]; ?>  on a 
 														<div id="chartContainer" style="height: 300px; width: 100%;"></div>
 													</div>
 													</div>
+													
+													
+													
 											</div>
 										</article>
 									</div>
@@ -170,17 +175,152 @@ The percentage of past complaints filed against <?php echo $output[6]; ?>  on a 
 								<!-- * Work                                                                     * -->
 								<!-- **************************************************************************** -->
 
-									<div class="slide" id="graph">
+									<div class="slide" id="Statistics">
 										<article class="page work">
 											<div class="inner">
 
 												<!-- Inner content -->
 
 													<header class="major">
-														<h2>The various steps we took to get here</h2>
+														<h2>The various statistics of our model</h2>
 													</header>
-													<div id="chartContainer" style="height: 300px; width: 100%;"></div>
-												
+													<div>
+														<h2> Comparing $C-Complaints Scale with Complaints Scale</h2>
+																		<table>
+																		  <tr>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">'Partition'</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">Training (75%)</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">%</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">Testing (25%)</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">%</th>
+																		  </tr>
+																		  <tr>
+																		    <td style="font-weight:bold">Correct</td>
+																		    <td>19,570</td>
+																		    <td>59.39%</td>
+																		    <td>6,547</td>
+																		    <td>58.42%</td>
+																		  </tr>
+																		  <tr>
+																		    <td style="font-weight:bold">Wrong</td>
+																		    <td>13,379</td>
+																		    <td>40.61%</td>
+																		    <td>4,660</td>
+																		    <td>41.58%</td>
+																		  </tr>
+																		  <tr>
+																		    <td style="font-weight:bold">Total</td>
+																		    <td>32,949</td>
+																		    <td></td>
+																		    <td>11,207</td>
+																		    <td></td>
+																		  </tr>
+																		</table>
+													</div>
+													<hr>
+													<div>
+														<h2>Coincidence Matrix for $C-Complaints Scale</h2>
+																		<table>
+																		  <tr>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">'Partition' = Training</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">High</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">Low</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">Low-Medium</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">Medium</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">Medium-High</th>
+																		  </tr>
+																		  <tr>
+																		    <td>High</td>
+																		    <td style="background-color:yellow; font-weight:bold">5,558</td>
+																		    <td>4</td>
+																		    <td>3</td>
+																		    <td>3</td>
+																		    <td>560</td>
+																		  </tr>
+																		  <tr>
+																		    <td>Low</td>
+																		    <td>152</td>
+																		    <td style="background-color:yellow; font-weight:bold">5,093</td>
+																		    <td>1,845</td>
+																		    <td>42</td>
+																		    <td>633</td>
+																		  </tr>
+																		  <tr>
+																		    <td>Low-Medium</td>
+																		    <td>57</td>
+																		    <td>2,856</td>
+																		    <td style="background-color:yellow; font-weight:bold">4,662</td>
+																		    <td>212</td>
+																		    <td>875</td>
+																		  </tr>
+																		  <tr>
+																		    <td>Medium</td>
+																		    <td>96</td>
+																		    <td>322</td>
+																		    <td>2,156</td>
+																		    <td style="background-color:yellow; font-weight:bold">327</td>
+																		    <td>1,487</td>
+																		  </tr>
+																		  <tr>
+																		    <td>Medium-High</td>
+																		    <td>991</td>
+																		    <td>47</td>
+																		    <td>786</td>
+																		    <td>252</td>
+																		    <td style="background-color:yellow; font-weight:bold">3,930</td>
+																		  </tr>
+																		  <tr>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">'Partition' = Testing</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">High</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">Low</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">Low-Medium</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">Medium</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">Medium-High</th>
+																		  </tr>
+																		  <tr>
+																		    <td>High</td>
+																		    <td style="background-color:yellow; font-weight:bold">1,913</td>
+																		    <td>0</td>
+																		    <td>2</td>
+																		    <td>1</td>
+																		    <td>210</td>
+																		  </tr>
+																		  <tr>
+																		    <td>Low</td>
+																		    <td>41</td>
+																		    <td style="background-color:yellow; font-weight:bold">1,693</td>
+																		    <td>617</td>
+																		    <td>12</td>
+																		    <td>200</td>
+																		  </tr>
+																		  <tr>
+																		    <td>Low-Medium</td>
+																		    <td>18</td>
+																		    <td>969</td>
+																		    <td style="background-color:yellow; font-weight:bold">1,543</td>
+																		    <td>79</td>
+																		    <td>306</td>
+																		  </tr>
+																		  <tr>
+																		    <td>Medium</td>
+																		    <td>36</td>
+																		    <td>139</td>
+																		    <td>734</td>
+																		    <td style="background-color:yellow; font-weight:bold">101</td>
+																		    <td>552</td>
+																		  </tr>
+																		  <tr>
+																		    <td>Medium-High</td>
+																		    <td>385</td>
+																		    <td>17</td>
+																		    <td>255</td>
+																		    <td>96</td>
+																		    <td style="background-color:yellow; font-weight:bold">1,297</td>
+																		  </tr>
+																		</table>
+														
+														
+													</div>
 											</div>
 										</article>
 									</div>
