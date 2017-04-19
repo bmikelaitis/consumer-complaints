@@ -172,7 +172,7 @@ The percentage of past complaints filed against <?php echo $output[6]; ?>  on a 
 									</div>
 
 								<!-- **************************************************************************** -->
-								<!-- * Work                                                                     * -->
+								<!-- * Statistics                                                                    * -->
 								<!-- **************************************************************************** -->
 
 									<div class="slide" id="Statistics">
@@ -184,6 +184,21 @@ The percentage of past complaints filed against <?php echo $output[6]; ?>  on a 
 													<header class="major">
 														<h2>The various statistics of our model</h2>
 													</header>
+													<div class="gallery">
+														<div class="row no-collapse">
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Tree1.png" class="image full"><img src="images/gallery/thumbnails/Tree1.jpg" alt="" title="Top Half of the Decision Tree." /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Tree2.png" class="image full"><img src="images/gallery/thumbnails/Tree2.jpg" alt="" title="The second top Half of the Decision Tree." /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Tree3.png" class="image full"><img src="images/gallery/thumbnails/Tree3.jpg" alt="" title="The third part of our Decision Tree" /></a></div>
+														</div>
+		
+														<div class="row no-collapse">
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Tree4.png" class="image full"><img src="images/gallery/thumbnails/Tree4.jpg" alt="" title="Bottom part of our Decision Tree." /></a></div>
+															<div class="4u 12u(mobile)"><a href="images/gallery/fulls/Data-Quality.png" class="image full"><img src="images/gallery/thumbnails/Data-Quality.jpg" alt="" title="Data valadation with zero missing values." /></a></div>
+												
+														</div>
+
+													</div>
+													<hr>
 													<div>
 														<h2> Comparing $C-Complaints Scale with Complaints Scale</h2>
 																		<table>
@@ -222,7 +237,7 @@ The percentage of past complaints filed against <?php echo $output[6]; ?>  on a 
 														<h2>Coincidence Matrix for $C-Complaints Scale</h2>
 																		<table>
 																		  <tr>
-																		    <th style="font-weight:bold; background-color:#f9cfd1;">'Partition' = Training</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">'1_Partition' = Training</th>
 																		    <th style="font-weight:bold; background-color:#f9cfd1;">High</th>
 																		    <th style="font-weight:bold; background-color:#f9cfd1;">Low</th>
 																		    <th style="font-weight:bold; background-color:#f9cfd1;">Low-Medium</th>
@@ -270,7 +285,7 @@ The percentage of past complaints filed against <?php echo $output[6]; ?>  on a 
 																		    <td style="background-color:yellow; font-weight:bold">3,930</td>
 																		  </tr>
 																		  <tr>
-																		    <th style="font-weight:bold; background-color:#f9cfd1;">'Partition' = Testing</th>
+																		    <th style="font-weight:bold; background-color:#f9cfd1;">'2_Partition' = Testing</th>
 																		    <th style="font-weight:bold; background-color:#f9cfd1;">High</th>
 																		    <th style="font-weight:bold; background-color:#f9cfd1;">Low</th>
 																		    <th style="font-weight:bold; background-color:#f9cfd1;">Low-Medium</th>

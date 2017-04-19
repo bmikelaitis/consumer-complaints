@@ -1,31 +1,11 @@
+This website was built to explain a prediction model using a C5.0 classification 
+algorithm to predict the number of consumer complaints filed against various 
+organizations matched with unique features.  
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This model uses the various inputs and passes the parameters into a python
+scoring engine.  This engine was developed based on a model that was created
+in IBM's SPSS Modeler.  The results in the model are designed to be estimates
+and can not be taken as truth.  This project was purely acadmic and is offered 
+online as a source of reference to anyone who wants to learn data-mining.  
 
-
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, we have created a small hello world application.
-
-1) Open the hello-world.php file
-
-2) Follow the run instructions in the file's comments
-
-3) If you want to look at the Apache logs, check out ~/lib/apache2/log
-
-And that's all there is to it! Just have fun. Go ahead and edit the code, 
-or add new files. It's all up to you! 
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
-# consumer-complaints
+All rights reserved by the team and various entities.  
