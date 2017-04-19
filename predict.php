@@ -64,6 +64,23 @@ window.onload = function () {
 }
 </script>
 <script type="text/javascript" src="/assets/script/canvasjs.min.js"></script>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 	</head>
 	<body>
 		<div class="container" id="wrapper">
@@ -97,26 +114,54 @@ window.onload = function () {
 													<header class="major">
 														<h2>The Results</h2>
 													</header>
-													<p>Below are several screenshots that show the various steps and information we took in developing this algorithm and application <?php 
- echo $output[0];
- echo $output[1];
- echo $output[2];
- echo $output[3];
- echo $output[4];
- echo $output[5];
-
-?>
-</p>
-<p> 
-The percentage of past complaints filed against <?php echo $output[6]; ?>  on a <?php echo $output[1]; ?> during <?php echo $output[2]; ?> with an <?php echo $output[3]; ?> change in volume trading was <?php echo $output[5]; ?>% </p>
-Ticker Symbol: <?php echo $output[0]; ?></p>
-<p> Day of the Week: <?php echo $output[1]; ?></p>
-<p> Season: <?php echo $output[2]; ?></p>
-<p> Volume: <?php echo $output[3]; ?></p>
-<p> Complaint Prediction: <?php echo $output[4]; ?></p>
-<p> Complaint Percent Frequency: <?php echo $output[5]; ?></p>
-<p> Company Name: <?php echo $output[6]; ?></p>                       
-													<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+														<div class="row">
+															<div class="12u 12u(mobile)">
+																<div class="content" >
+																	<h3> 
+The percentage of past complaints filed against <?php echo $output[6]; ?>  on a <?php echo $output[1]; ?> during <?php echo $output[2]; ?> with an <?php echo $output[3]; ?> change in volume trading was <?php echo $output[5]; ?>% </h3>
+<h2>Prediction: <?php echo $output[4]; ?></h2>
+																</div>
+															</div>
+														</div>
+														
+														
+														<div class="row">
+															<div class="4u 12u(mobile)">
+															
+																
+																
+																	<table style = "margin-top: 50px">
+																	  <tr>
+																	    <th>Category</th>
+																	    <th>Range</th>
+																	  </tr>
+																	  <tr>
+																	    <td>Low</td>
+																	    <td>0 - 2</td>
+																	  </tr>
+																	  <tr>
+																	    <td>Low-Medium</td>
+																	    <td>0 - 2</td>
+																	  </tr>
+																	  <tr>
+																	    <td>Medium</td>
+																	    <td>0 - 2</td>
+																	  </tr>
+																	  <tr>
+																	    <td>Medium-High</td>
+																	    <td>0 - 2</td>
+																	  </tr>
+																	  <tr>
+																	    <td>High</td>
+																	    <td>0 - 2</td>
+																	  </tr>
+																	</table>
+																	
+															</div>
+                     							<div class="8u 12u(mobile)">
+														<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+													</div>
+													</div>
 											</div>
 										</article>
 									</div>
