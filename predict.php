@@ -23,7 +23,47 @@ $tmp = exec("python score-engine.py $ticker $day $season $volume",$output);
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-
+	<script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+			text: "Percent likelihood of each category?",
+			fontFamily: "arial black"
+		},
+                animationEnabled: true,
+		legend: {
+			verticalAlign: "bottom",
+			horizontalAlign: "center"
+		},
+		theme: "theme1",
+		data: [
+		{        
+			type: "pie",
+			indexLabelFontFamily: "Garamond",       
+			indexLabelFontSize: 20,
+			indexLabelFontWeight: "bold",
+			startAngle:0,
+			indexLabelFontColor: "MistyRose",       
+			indexLabelLineColor: "darkgrey", 
+			indexLabelPlacement: "inside", 
+			toolTipContent: "{name}: {y}% Likelihood",
+			showInLegend: true,
+			indexLabel: "#percent%", 
+			dataPoints: [
+				{  y: <?php echo $output[7]; ?>, name: "Low", legendMarkerType: "square"},
+				{  y: <?php echo $output[8]; ?>, name: "Low-Medium", legendMarkerType: "square"},
+				{  y: <?php echo $output[9]; ?>, name: "Medium", legendMarkerType: "square"},
+				{  y: <?php echo $output[10]; ?>, name: "Medium-High", legendMarkerType: "square"},
+				{  y: <?php echo $output[11]; ?>, name: "High", legendMarkerType: "square"}
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+<script type="text/javascript" src="/assets/script/canvasjs.min.js"></script>
 	</head>
 	<body>
 		<div class="container" id="wrapper">
@@ -76,7 +116,7 @@ Ticker Symbol: <?php echo $output[0]; ?></p>
 <p> Complaint Prediction: <?php echo $output[4]; ?></p>
 <p> Complaint Percent Frequency: <?php echo $output[5]; ?></p>
 <p> Company Name: <?php echo $output[6]; ?></p>                       
-													
+													<div id="chartContainer" style="height: 300px; width: 100%;"></div>
 											</div>
 										</article>
 									</div>
@@ -94,7 +134,7 @@ Ticker Symbol: <?php echo $output[0]; ?></p>
 													<header class="major">
 														<h2>The various steps we took to get here</h2>
 													</header>
-													
+													<div id="chartContainer" style="height: 300px; width: 100%;"></div>
 												
 											</div>
 										</article>
@@ -130,6 +170,7 @@ Ticker Symbol: <?php echo $output[0]; ?></p>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
