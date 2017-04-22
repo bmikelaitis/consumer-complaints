@@ -118,7 +118,7 @@ tr:nth-child(even) {
 															<div class="12u 12u(mobile)">
 																<div class="content" >
 																	<h1> 
-The percentage of past complaints filed against <?php echo $output[6]; ?>  on a <?php echo $output[1]; ?> during <?php echo $output[2]; ?> with an <?php echo $output[3]; ?> change in volume trading was <?php echo $output[5]; ?>% </h1>
+The prediction of our model based on past complaints filed against <?php echo $output[6]; ?>  on a <?php echo $output[1]; ?> during <?php echo $output[2]; ?> with an <?php echo $output[3]; ?> change in volume trading was <?php echo $output[4]; ?> at <?php echo $output[5]; ?>% </h1>
 <br>
 <h2>Prediction Value: <?php echo $output[4]; ?></h2>
 <hr>
